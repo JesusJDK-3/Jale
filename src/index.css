@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-surface font-sans text-body text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+  }
+
+  ::selection {
+    @apply bg-primary/15 text-ink;
+  }
+}
+
+@layer components {
+  .container-jale {
+    @apply mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-feed {
+    @apply mx-auto w-full max-w-feed px-4 sm:px-6 lg:px-8;
+  }
+
+  .stories-scroll {
+    @apply flex gap-4 overflow-x-auto pb-1;
+    scrollbar-width: none;
+  }
+
+  .stories-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
