@@ -5,6 +5,8 @@ import { Button } from "./Button";
 
 const links = [
   { to: "/explorar", label: "Explorar" },
+  { to: "/dashboard", label: "Mi Panel" },
+  { to: "/chat", label: "Mensajes" },
   { to: "/#categorias", label: "Categorías" },
   { to: "/#como-funciona", label: "Cómo funciona" },
   { to: "/sistema-de-diseno", label: "Sistema" },
